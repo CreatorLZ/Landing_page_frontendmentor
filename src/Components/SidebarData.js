@@ -11,22 +11,22 @@ export const SidebarData = [
         subNav:[
             {
                 title: "Todo List",
-                icon: "/images/icon-todo.svg"
+                icon: "./images/icon-todo.svg"
             },
 
             {
                 title: "Calender",
-                icon: "/images/icon-calendar.svg"
+                icon: "./images/icon-calendar.svg"
             },
             
             {
                 title: "Reminder",
-                icon: "/images/icon-reminders.svg"
+                icon: "./images/icon-reminders.svg"
             },
             
             {
                 title: "Planning",
-                icon: "/images/icon-planning.svg"
+                icon: "./images/icon-planning.svg"
             },
         ]
     },

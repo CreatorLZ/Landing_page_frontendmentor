@@ -75,7 +75,7 @@ const Bigtext = styled.h1`
 font-weight: 700;
 font-size: 70px;
 letter-spacing: 3px;
-margin: 0;
+margin:0;
 margin-top: 110px;
 margin-bottom:0px;
 ${mobile({display: "none"})};
@@ -197,7 +197,7 @@ right:20px;
 
 const DropDownList = styled.div`
   padding: 0;
-  margin: 0;
+  margin:0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,7 +242,7 @@ right: ${({sidebar}) => (sidebar ? '0' : '-100%')};
 transition: 650ms;
 z-index: 75;
 box-sizing: border-box;
-margin: 0;
+margin:0;
 padding: 0;
 ${mobile({width: "230px", display:"flex" })};
 `
@@ -393,15 +393,15 @@ const Home = () => {
               </Smalltextmobile>
           <Learn >Learn more</Learn>
           <Iconstab>
-            <img style={{width:"80px",marginRight:"7px"}} src="./Landing_page_frontendmentor/images/client-databiz.svg" alt="" />
-            <img style={{width:"80px",marginRight:"7px"}} src="./Landing_page_frontendmentor/images/client-audiophile.svg" alt="" />
-            <img style={{width:"80px",marginRight:"7px"}} src="./Landing_page_frontendmentor/images/client-meet.svg" alt="" />
-            <img style={{width:"80px",marginRight:"0px"}} src="./Landing_page_frontendmentor/images/client-maker.svg" alt="" />
+            <img style={{width:"80px",marginRight:"7px"}} src="./images/client-databiz.svg" alt="" />
+            <img style={{width:"80px",marginRight:"7px"}} src="./images/client-audiophile.svg" alt="" />
+            <img style={{width:"80px",marginRight:"7px"}} src="./images/client-meet.svg" alt="" />
+            <img style={{width:"80px",marginRight:"0px"}} src="./images/client-maker.svg" alt="" />
           </Iconstab>
         </Leftbody>
         <Rightbody>
           <Desktopimage>
-          <Image src='./images/image-hero-desktop.png' /> </Desktopimage>
+          <Image src='./images/image-hero-desktop.png' alt=''/> </Desktopimage>
         </Rightbody>
       </Mainbody>
       <Smalltext style={{alignItems:"center", justifyContent:"center", fontSize:"12px", fontWeight:"700"}}>
