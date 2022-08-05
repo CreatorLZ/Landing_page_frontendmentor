@@ -327,10 +327,10 @@ const Home = () => {
            {isOpen && (
              <DropDownListContainer>
             <DropDownList>
-              <ListItem><img src="./Landing_page_frontendmentor/images/icon-todo.svg" alt="" /><Text style={{marginLeft:"10px"}}>Todo List</Text></ListItem>
-              <ListItem><img src="./Landing_page_frontendmentor/images/icon-calendar.svg" alt=""  style={{marginRight:"10px"}} />Calender</ListItem>
-              <ListItem><img src="./Landing_page_frontendmentor/images/icon-reminders.svg" alt=""  style={{marginRight:"10px"}} />Reminder</ListItem>
-              <ListItem><img src="./Landing_page_frontendmentor/images/icon-planning.svg" alt=""  style={{marginRight:"10px"}} />Planning</ListItem>
+              <ListItem><img src="./images/icon-todo.svg" alt="" /><Text style={{marginLeft:"10px"}}>Todo List</Text></ListItem>
+              <ListItem><img src="./images/icon-calendar.svg" alt=""  style={{marginRight:"10px"}} />Calender</ListItem>
+              <ListItem><img src="./images/icon-reminders.svg" alt=""  style={{marginRight:"10px"}} />Reminder</ListItem>
+              <ListItem><img src="./images/icon-planning.svg" alt=""  style={{marginRight:"10px"}} />Planning</ListItem>
             </DropDownList>
           </DropDownListContainer>
         )}
@@ -374,7 +374,7 @@ const Home = () => {
         </Right>
         </Navbar>
         <Mobileimage>
-          <img style={{height:"300px", width:"360px", objectFit:"cover"}} src="./Landing_page_frontendmentor/images/image-hero-mobile.png" alt="mobile" />
+          <img style={{height:"300px", maxWidth:"860px", objectFit:"cover"}} src="./images/image-hero-mobile.png" alt="mobile" />
         </Mobileimage>
       <Mainbody>
         <Leftbody>
@@ -401,7 +401,7 @@ const Home = () => {
         </Leftbody>
         <Rightbody>
           <Desktopimage>
-          <Image src='./Landing_page_frontendmentor/images/image-hero-desktop.png' /> </Desktopimage>
+          <Image src='./images/image-hero-desktop.png' /> </Desktopimage>
         </Rightbody>
       </Mainbody>
       <Smalltext style={{alignItems:"center", justifyContent:"center", fontSize:"12px", fontWeight:"700"}}>
