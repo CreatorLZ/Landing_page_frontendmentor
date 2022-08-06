@@ -5,10 +5,6 @@ import { mobile } from './responsive'
 import {SidebarData, } from './SidebarData'
 import SubMenu from './SubMenu';
 
-
-const Container = styled.div`
-
-`
 const Wrapper = styled.div`
 width: 100%;
 height: 100%;
@@ -25,6 +21,7 @@ width: 100%;
 height:50px;
 display: flex;
 justify-content: space-between;
+margin: 10px 10px;
 `
 const Left = styled.div`
 display: flex;
@@ -34,8 +31,9 @@ const Right = styled.div`
 display: flex;
 `
 
-const Mainbody = styled.div`
+const Mainbody = styled.main`
 display: flex;
+margin-bottom: 20px;
 ${mobile({flexDirection:"column"})};
 
 `
@@ -43,7 +41,6 @@ ${mobile({flexDirection:"column"})};
 const Rightbody = styled.div`
 flex: 1;
 display: flex;
-padding: 0rem 1rem 2rem 0rem;
 ${mobile({display: "flex"})};
 
 `
@@ -136,7 +133,7 @@ color: white;
   cursor:pointer;
 }
 `
-const Dropdownitem = styled.div`
+const Dropdownitem = styled.nav`
 display:flex;
 margin:20px 20px 40px 0px;
 align-items:center;
@@ -165,16 +162,17 @@ ${mobile({display: "flex" })};
 `
 
 const Button = styled.button`
-margin:10px 20px 20px 20px;
+margin:5px 20px 20px 10px ;
 width:100px;
 height: 35px;
 background-color: transparent;
 border-radius: 10px;
-
+color:gray;
 font-size: 16px;
 :hover{
-  transform: scale(1.03);
+  transform: scale(1.05);
   cursor: pointer;
+  color: black
 }
 `
 
@@ -192,7 +190,6 @@ width:130px;
 position: absolute;
 top:15px;
 right:20px;
-
 `;
 
 const DropDownList = styled.div`
@@ -211,6 +208,7 @@ const DropDownList = styled.div`
   height: 135px;
   width: 125px;
   border-radius: 10px;
+  transition: 0.4ms ease-in;
   :first-child{
     padding-top: 0.8em;
   };
@@ -316,7 +314,6 @@ const Home = () => {
   },[isOpen])
 
   return (
-    <Container>
       <Wrapper>
       <Navbar>
         <Left>
@@ -352,8 +349,8 @@ const Home = () => {
         </Left>
         <Right>
           <Desktopbuttons>
-          <Button style={{border:"none"}}>Login</Button>
-          <Button >Register</Button>
+          <Button style={{border:"none", marginRight:"0"}}>Login</Button>
+          <Button style={{marginRight:"50px"}}>Register</Button>
           </Desktopbuttons>
           <Overlay sidebar={sidebar} onClick={showSidebar}/>
           <Hambuger onClick={showSidebar}><svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg></Hambuger>
@@ -411,11 +408,12 @@ const Home = () => {
       <Smalltextmobile style={{alignItems:"center", justifyContent:"center", fontSize:"12px", fontWeight:"700"}}>
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" >Frontend Mentor</a>. 
       </Smalltextmobile>
+      <footer>
       <Smalltextmobile style={{alignItems:"center", justifyContent:"center", fontSize:"12px", fontWeight:"700",}}>
       Coded by <a href="https://github.com/CreatorLZ" >Isaac C Anyim</a>.
       </Smalltextmobile>
+      </footer>
       </Wrapper>
-    </Container>
   )
 }
 
