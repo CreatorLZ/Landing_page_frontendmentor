@@ -7,4 +7,4 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
 
-Employed react hooks (useState and useRef ) to enable dropdown toggling and mangage content visiblilty
+Employed react hooks (useState useEffect, and useRef ) to enable dropdown toggling and mangage content visiblilty
